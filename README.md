@@ -1,6 +1,6 @@
 # Utilities
 
-## Fix_CSV  
+## CSV_PARSER    
 This utility takes a csv file and updates the delimiter per users specification.  
 ### Example: Changing delimeter from a pipe to comma
 #### Command: python fix_csv.py <src_file> <new_file> ,  
