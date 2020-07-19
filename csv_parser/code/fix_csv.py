@@ -17,7 +17,7 @@ def fieldname_data(src_file):
     """
 
     with open(src_file, 'r', newline='') as csvfile:
-        fieldnames = next(csvfile)
+        fieldnames = next(csvfile).strip()
         return fieldnames
 
 def find_delimiter(src_file):
