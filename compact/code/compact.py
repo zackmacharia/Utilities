@@ -21,13 +21,11 @@ def del_adjacent_dups(sequence):
         if item != placeholder_val:
             compact_list.append(item)
             placeholder_val = item
-    return compact_list
-    compact_list = [item for item in sequence if item != placeholder_val]
-    print(compact_list)
+    return compact_list    
 
 
 if __name__ == '__main__':
-    # sequence = [1, 1, 2, 2, 3, 2]
-    sequence = [n**2 for n in [1, 2, 2]]
+    sequence = [1, 1, 2, 2, 3, 2]
+    # sequence = [n**2 for n in [1, 2, 2]]
     del_adjacent_dups(sequence)
 
