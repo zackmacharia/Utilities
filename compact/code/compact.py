@@ -12,5 +12,6 @@ def del_adjacent_dups(sequence):
 if __name__ == '__main__':
     sequence = [1, 1, 2, 2, 3, 2]
     generator_object = del_adjacent_dups(sequence)
-    for i in generator_object:
-        print(i)
+    result = [item for item in generator_object]
+    print(result)
+ 
