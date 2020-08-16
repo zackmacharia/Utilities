@@ -27,7 +27,8 @@ This utility automates the workflow for building a development environment.
 Automated Tasks Details:
 * Clones remote GitHub reposistory
 * Creates a new python3 virtualenvironment
-
+### Example: Creating a new environment for user zackmacharia and repo name demo
+#### Command: python envSetup.py zackmacharia demo
 
 ## TAIL  
 This utility takes a sequence or an iterator and returns the last items specified by an integer passed as input
