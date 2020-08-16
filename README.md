@@ -7,7 +7,7 @@ This generator function removes duplicate subsequent values in a sequence.
 
 Input Sequence: [1, 1, 2, 2, 3, 2]
 
-## CSV_PARSER    
+## CSV-PARSER    
 This utility takes a csv file and updates the delimiter per users specification.  
 ### Example: Changing delimeter from a pipe to comma
 #### Command: python fix_csv.py <src_file> <new_file> ,  
@@ -22,7 +22,7 @@ Reading,Make,Model,Type,Value
 Reading 0,Toyota,Previa,distance,19.83942  
 Reading 1,Dodge,Intrepid,distance,31.28257   
 
-## DEV_ENV_SETUP
+## DEV-ENV-SETUP
 This utility automates the workflow for building a development environment.
 Automated Tasks Details:
 * Clones remote GitHub reposistory
