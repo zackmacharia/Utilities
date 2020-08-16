@@ -27,6 +27,7 @@ def main():
         create_python3_venv()
     else:
         print('try again')
+        TODO: 'gracefully handle failures'
 
 
 def clone_github_repo(username, repo):
