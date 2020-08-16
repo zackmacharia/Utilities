@@ -1,5 +1,12 @@
 # Utilities
 
+## COMPACT
+This generator function removes duplicate subsequent values in a sequence.
+### Example: Working with a sequence of integers
+#### Command: python compact.py
+
+Input Sequence: [1, 1, 2, 2, 3, 2]
+
 ## CSV_PARSER    
 This utility takes a csv file and updates the delimiter per users specification.  
 ### Example: Changing delimeter from a pipe to comma
@@ -13,16 +20,13 @@ Reading 1|Dodge|Intrepid|distance|31.28257
 Output File  
 Reading,Make,Model,Type,Value  
 Reading 0,Toyota,Previa,distance,19.83942  
-Reading 1,Dodge,Intrepid,distance,31.28257  
+Reading 1,Dodge,Intrepid,distance,31.28257   
 
-
-## COMPACT  
-This generator function removes duplicate subsequent values in a sequence.  
-### Example: Working with a sequence of integers
-#### Command: python compact.py 
-
-Input Sequence: [1, 1, 2, 2, 3, 2]
-Output Sequence: [1, 2, 3, 2]
+## DEV_ENV_SETUP
+This utility automates the workflow for building a development environment.
+Automated Tasks Details:
+* Clones remote GitHub reposistory
+* Creates a new python3 virtualenvironment
 
 
 ## TAIL  
