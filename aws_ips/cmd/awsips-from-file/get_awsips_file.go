@@ -22,22 +22,21 @@ type Prefix struct {
 }
 
 func main() {
-
-	jsonFile, err := os.Open("aws-ips.json")
+	// Open json file
+	jsonFile, err := os.Open("example.json")
 	if err != nil {
 		fmt.Println(err)
 	}
 
 	defer jsonFile.Close()
 
-	// read the opened jsonFile as a byte array
+	// Read the opened jsonFile as a byte array
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 
-	// initialize Users array
+	// Defining a prefixes array
 	var prefixes Prefixes
 
-	// unmarshall our byteArray which contains our
-	// jsonFile's content in 'users' - just defined above
+	// Unmarshall the byteArray which contains contents from the JSON file to prefixes
 	json.Unmarshal(byteValue, &prefixes)
 
 	// Appends a line of text to a file or creates the file if it doesn't exist.

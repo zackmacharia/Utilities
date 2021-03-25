@@ -39,3 +39,15 @@ Input Sequence and Integer passed to function:
 seq = [1, 1, 2, 2, 3, 2]; num = 3
 
 Output Sequence: [2, 3, 2] --> returns the last 3 items specified by num
+
+## AWS-IPS    
+This utility reads a JSON file containing AWS IPS and creates a new file with IP Address information only for the specified regions, in this case the US region.  
+### Example: Reading contents from a URL and creating a file with US AWS IPS
+#### Command: go run get_awsips_url.go  
+
+Input Resource: Published AWS IPS URL provided by Amazon  
+ 
+Output File: US_REGION_AWS_IPS
+15.230.39.48/31
+15.230.39.238/31 
+15.230.131.48/28

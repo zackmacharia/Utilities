@@ -27,15 +27,18 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	// Defining a prefixes array
 	var prefixes Prefixes
+
+	// Creates a new JSON decoder dumps the Get response body contents then assign to prefix array
 	err = json.NewDecoder(resp.Body).Decode(&prefixes)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Appends a line of text to a file or creates the file if it doesn't exist.
-	f, err := os.OpenFile("US_REGION_AWS_IPS-2", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
-
+	f, err := os.OpenFile("US_REGION_AWS_IPS", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
