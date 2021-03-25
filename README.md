@@ -47,7 +47,8 @@ This utility reads a JSON file containing AWS IPS and creates a new file with IP
 
 Input Resource: Published AWS IPS URL provided by Amazon  
  
-Output File: US_REGION_AWS_IPS
+Output File: US_REGION_AWS_IPS  
+
 15.230.39.48/31
 15.230.39.238/31 
 15.230.131.48/28
