@@ -52,3 +52,8 @@ Output File: US_REGION_AWS_IPS
 15.230.39.48/31   
 15.230.39.238/31    
 15.230.131.48/28   
+
+## PANOS API KEY USING GOLANG
+This utility uses GOLANG to retrieve an API key from a Palo Alto Networks Firewall or Panorama
+### Example: User will be prompted for their username and password.
+#### Command: go run get-api-key.go  
